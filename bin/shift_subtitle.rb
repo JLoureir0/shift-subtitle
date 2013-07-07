@@ -1,3 +1,4 @@
-require_relative '../lib/shift_subtitle'
+$:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
+require 'shift_subtitle'
 
 ShiftSubtitle::Subtitle.run!(ARGV)
